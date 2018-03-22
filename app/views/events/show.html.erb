@@ -1,0 +1,19 @@
+<h1>Events#show</h1>
+<p>Find me in app/views/events/show.html.erb</p>
+<div class="row">
+  <div class="col-lg-12">
+    <h1>イベント詳細</h1>
+    <dl>
+      <dt>イベント名</dt>
+      <dd style="margin:0px 0px 10px 20px"><%= @event.event_name %> <%= @event.event_name %></dd>
+      <dt>イベント日時</dt>
+      <dd style="margin:0px 0px 10px 20px"><%= @event.event_date %></dd>
+      <dt>場所</dt>
+      <dd style="margin:0px 0px 10px 20px"><%= @event.place %></dd>
+      <dt>コメント詳細</dt>
+      <dd style="margin:0px 0px 10px 20px"><%= @event.description %></dd>
+    </dl>
+    <%= link_to '編集', edit_event_path(@event), class: "btn btn-default" %>
+    <%= link_to '戻る', events_path, class: "btn btn-default" %>
+  </div>
+</div>
