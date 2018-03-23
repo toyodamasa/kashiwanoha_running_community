@@ -16,3 +16,9 @@ module KashiwanohaRunningCommunity
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+module SpartCrm
+  class Application < Rails::Application
+    config.time_zone = 'Tokyo' # タイムゾーンもついでに変更
+    config.i18n.default_locale = :ja
+  end
+end
